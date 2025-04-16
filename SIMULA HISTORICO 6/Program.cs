@@ -23,14 +23,14 @@ class Program
                 case "1":
                     Console.Write("Digite a URL da nova página: ");
                     string novaPagina = Console.ReadLine();
-                    historico.Push(novaPagina); // Adiciona a nova página ao topo da pilha
+                    historico.Push(novaPagina); 
                     Console.WriteLine($"Você acessou: {novaPagina}");
                     break;
 
                 case "2":
                     if (historico.Count > 0)
                     {
-                        string paginaRemovida = historico.Pop(); // Remove a página atual
+                        string paginaRemovida = historico.Pop(); 
                         if (historico.Count > 0)
                         {
                             Console.WriteLine($"Você voltou para: {historico.Peek()}");
